@@ -28,6 +28,8 @@
       padding: 10px 10px;
       text-decoration: none;
       font-size:14px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 100;
     }
     li a:hover {
       text-decoration: underline;
@@ -113,6 +115,128 @@
       outline:none;
       cursor: pointer;
     }
+    footer  {
+  background: #f2f2f2;
+  border-top: solid 2px #e4e4e4;
+/*   position: fixed; */
+  bottom: 0;
+  padding-bottom: 0;
+  width: 100%;
+  
+}
+
+footer ul li {
+  display: inline;
+  color: #666666;
+  font-size: 14px;
+  padding: 13px;
+}
+
+footer ul {
+  float: left;
+  padding: 1px;
+}
+
+footer ul a:hover {
+  text-decoration: underline;
+}
+
+.footer-right {
+  float: right;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 400px) {
+ 
+ li.nav-links a {
+    display: none;
+  }
+  
+ #google_logo {
+   padding: 0;
+ }
+  
+ .buttons {
+   display: none;
+ }
+  
+ #form-search {
+   width: 80%;
+
+ }
+  
+ footer {
+   bottom: 0;
+ }
+  
+ footer ul {
+   float: none;
+   padding-bottom: 2px;
+    
+ }
+  
+ .footer-left {
+   text-align: center;
+   margin: auto; 
+   padding-top: 10px;
+    
+ }
+  
+ .footer-right {
+   float: none;
+   text-align: center;
+   
+ }
+}
+
+@media screen and (max-width: 565px) {
+ 
+  li.nav-links a {
+    display: none;
+  }
+  
+  
+ #google_logo {
+   padding: 0;
+ }
+  
+ .buttons {
+   display: none;
+ }
+  
+ #form-search {
+   width: 80%;
+
+ }
+  
+ footer {
+  bottom: 0;
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;
+ }
+  
+ footer ul {
+   float: none;
+   padding-bottom: 2px;
+    
+ }
+  
+ .footer-left {
+   text-align: center;
+   margin: auto; 
+   padding-top: 10px;
+    
+ }
+  
+ .footer-right {
+   float: none;
+   text-align: center;
+   
+ }
+}
     </style>
     <div class="logo">
       <img alt="Google" src="googlelogo_color_272x92dp.png">
@@ -126,3 +250,20 @@
       <button onclick="window.location.href='index.html'" class="button" type="button">I'm Feeling Lucky</button>
      </div>
   </body>
+  <p><br></p>
+  <p><br></p>
+  <p><br></p>
+  <p><br></p>
+  <p><br></p>
+  <footer>
+    <ul class="footer-left">
+      <li><a href="index.html">Advertising</a></li>
+      <li><a href="index.html">Business</a></li>
+      <li><a href="index.html">About</a></li> 
+    </ul>
+    <ul class="footer-right">    
+      <li><a href="index.html">Privacy</a></li>
+      <li><a href="index.html">Terms</a></li>
+      <li><a href="index.html">Settings</a></li>
+    </ul>       
+</footer> 
